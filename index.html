@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>CapyClub</title>
+    <title>Thank you</title>
     <link rel="icon" type="image/x-icon" href="capy_transparent.png">
-    <link rel="stylesheet" href="homeStyle.css">
+ 
 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
 
 
 </head>
@@ -16,10 +16,32 @@
     <video autoplay muted loop id="myVideo">
         <source src="CapyThankVideo.mp4" type="video/mp4">
       </video>
+      <button class="goback" onclick="history.back()">Go Back</button>
+
       <style>
          #myVideo {
-            width: 100%; 
-         }
+            width: 100%;
+        }
+        /* Center the button horizontally */
+        body {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .goback {
+            position: fixed;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            color: white;
+            background-color: transparent;
+            border-radius: 6px;
+            border: 2px solid rgb(255, 255, 255);
+            cursor: pointer;
+            
+        }
       </style>
 
 </body>
